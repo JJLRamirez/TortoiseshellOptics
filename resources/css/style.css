@@ -44,6 +44,11 @@ nav p {
   padding: 1rem 2rem;
 }
 
+.menu span {
+  display: none;
+  text-align: right;
+}
+
 .banner {
   background-image: url("../images/glasses-bg.png");
   background-size: cover;
@@ -126,4 +131,75 @@ footer img {
 footer p {
   margin-top: auto;
   margin-bottom: auto;
+}
+
+@media only screen and (max-width: 1024px) {
+  header {
+    top: 0;
+  }
+
+  .banner {
+    height: 22rem;
+  }
+
+  .banner-caption {
+    top: 5rem;
+    margin-right: 2rem;
+    padding: 0.75rem 4rem;
+    font-size: 1.33rem;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  header {
+    top: 0;
+  }
+
+  .menu p {
+    display: none;
+  }
+
+  .menu span {
+    display: block;
+    top: auto;
+    bottom: auto;
+    padding-right: 2rem;
+  }
+
+  .banner {
+    height: 17rem;
+    top: 9rem;
+  }
+
+  .banner-caption {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .large-image-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 3.77rem;
+  }
+
+  .image-subtext {
+    margin-bottom: 1.54rem;
+    font-size: 0.77rem;
+    }
+
+  .bottom-container {
+    flex-wrap: wrap;
+  }
+
+  .bottom-title {
+    width: 100%;
+
+  }
+
+  .bottom-text {
+    margin-bottom: 4rem;
+    font-size: 0.77rem;
+  }
 }
